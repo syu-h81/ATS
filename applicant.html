@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <!-- OGP -->
+  <meta property="og:url" content=""> <!-- //ページのURLを設定 -->
+  <meta property="og:type" content=""> <!-- //ページの種類を設定 -->
+  <meta property="og:title" content=""> <!-- //ページのタイトルを設定 -->
+  <meta property="og:description" content=""> <!-- //ページのディスカッションを設定 -->
+  <meta property="og:site_name" content=""> <!-- //サイトの名前を設定 -->
+  <meta property="og:image" content=""> <!-- //ogp画像の設定 -->
+  <meta property="og:locale" content="ja_JP"> <!-- //ページの国コードの設定 -->
+
+  <!-- Import Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Import fontawesome -->
+  <link href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" rel="stylesheet">
+
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Import JS/jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous">
+  </script>
+<script defer src="assets/js/main.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
+<body>
+  <div class="l-wrapper">
+    <div class="l-wrapper__flex">
+      <!--======== l-header ========-->
+      <header class="l-header">
+        <div class="l-header__inner l-inner">
+          <nav class="l-header-nav">
+            <ul class="l-header-nav__list">
+              <li class="l-header-nav__item"><a href="/" class="l-header__link">ホーム</a></li>
+              <li class="l-header-nav__item"><a href="applicant.html" class="l-header-nav__link">求職者管理</a></li>
+              <li class="l-header-nav__item"><a href="corporate.html" class="l-header-nav__link">企業管理</a></li>
+              <li class="l-header-nav__item"><a href="recruit.html" class="l-header-nav__link">求人管理</a></li>
+              <li class="l-header-nav__item"><a href="selection.html" class="l-header-nav__link">応募選考管理</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header-nav__link">新規応募</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header__link">保留応募</a></li>
+              <li class="l-header-nav__item"><a href="setting.html" class="l-header-nav__link">設定</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header-nav__link">ユーザー管理</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header-nav__link">グループ管理</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header-nav__link">連携設定</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="p-appli-main l-main">
+        <div class="p-appli__inner l-main-inner">
+          <div class="p-appli__title__inner c-title-inner">
+            <div class="p-appli__group c-group">●●●●（グループ名）</div>
+            <div class="p-appli__title c-title-area">
+              <h1 class="c-title">求職者一覧</h1>
+            </div>
+            <div class="p-appli-btn__inner">
+              <button class="p-appli__register__btn c-btn">
+                <a href="applicant-register.html" class="p-appli__register__btn__text c-btn-text">求職者登録</a>
+              </button>
+              <button class="p-appli__input__btn c-input-btn">
+                <a href="person-info.html" class="p-appli__input__btn__text c-input-btn-text">入力用フォームのリンクを取得</a>
+              </button>
+              <div class="p-appli__filter c-filter">
+                <img src="assets/images/filter.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="p-appli__pagination c-pagination">
+            <div class="p-appli__pagination__inner c-pagination__inner">
+              <div class="c-pagination__prev__arrow">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <div class="c-pagination__radius">
+                <span class="c-pagination__radius__text">1</span>
+              </div>
+              <div class="c-pagination__radius">
+                <span class="c-pagination__radius__text">2</span>
+              </div>
+              <div class="c-pagination__radius">
+                <span class="c-pagination__radius__text">3</span>
+              </div>
+              <div class="c-pagination__radius">
+                <span class="c-pagination__radius__text">4</span>
+              </div>
+              <div class="c-pagination__radius">
+                <span class="c-pagination__radius__text">5</span>
+              </div>
+              <div class="c-pagination__radius">
+                <span class="c-pagination__text">...</span>
+              </div>
+              <div class="c-pagination__radius">
+                <span class="c-pagination__radius__text">30</span>
+              </div>
+              <div class="c-pagination__next__arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <section class="p-appli l-section">
+            <div class="p-appli__inner l-inner">
+              <table class="p-appli__table c-table">
+                <tr class="p-appli__tr c-tr">
+                  <th class="p-appli__th c-th"><input type="checkbox" class="c-input-checkbox"></th>
+                  <th class="p-appli__th c-th">求職者名</th>
+                  <th class="p-appli__th c-th">担当CA</th>
+                  <th class="p-appli__th c-th">ステータス</th>
+                  <th class="p-appli__th c-th">選考数</th>
+                  <th class="p-appli__th c-th">内定数</th>
+                  <th class="p-appli__th c-th">CAコメント欄</th>
+                </tr>
+                <tr class="p-appli__tr c-tr">
+                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox" checked="checked"></td>
+                  <td class="p-appli-td c-td"><a href="">松井良太</a></td>
+                  <td class="p-appli-td c-td">後東健太</td>
+                  <td class="p-appli-td c-td">支援中</td>
+                  <td class="p-appli-td c-td"><a href="">1</a></td>
+                  <td class="p-appli-td c-td"><a href="">10</a></td>
+                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea">フリーテキスト&NewLine;(ここで入力可)</textarea></td>
+                </tr>
+                <tr class="p-appli__tr c-tr">
+                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox" checked="checked"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea"></textarea></td>
+                </tr>
+                <tr class="p-appli__tr c-tr">
+                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox" checked="checked"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea"></textarea></td>
+                </tr>
+                <tr class="p-appli__tr c-tr">
+                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea"></textarea></td>
+                </tr>
+                <tr class="p-appli__tr c-tr">
+                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea"></textarea></td>
+                </tr>
+                <tr class="p-appli__tr c-tr">
+                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea"></textarea></td>
+                </tr>
+                <tr class="p-appli__tr c-tr">
+                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"></td>
+                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea"></textarea></td>
+                </tr>
+              </table>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

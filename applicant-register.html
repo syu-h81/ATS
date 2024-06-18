@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <!-- OGP -->
+  <meta property="og:url" content=""> <!-- //ページのURLを設定 -->
+  <meta property="og:type" content=""> <!-- //ページの種類を設定 -->
+  <meta property="og:title" content=""> <!-- //ページのタイトルを設定 -->
+  <meta property="og:description" content=""> <!-- //ページのディスカッションを設定 -->
+  <meta property="og:site_name" content=""> <!-- //サイトの名前を設定 -->
+  <meta property="og:image" content=""> <!-- //ogp画像の設定 -->
+  <meta property="og:locale" content="ja_JP"> <!-- //ページの国コードの設定 -->
+
+  <!-- Import Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Import fontawesome -->
+  <link href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" rel="stylesheet">
+
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Import JS/jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous">
+  </script>
+<script defer src="assets/js/main.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
+<body>
+  <div class="l-wrapper">
+    <div class="l-wrapper__flex">
+      <!--======== l-header ========-->
+      <header class="l-header">
+        <div class="l-header__inner l-inner">
+          <nav class="l-header-nav">
+            <ul class="l-header-nav__list">
+              <li class="l-header-nav__item"><a href="/" class="l-header__link">ホーム</a></li>
+              <li class="l-header-nav__item"><a href="applicant.html" class="l-header-nav__link">求職者管理</a></li>
+              <li class="l-header-nav__item"><a href="corporate.html" class="l-header-nav__link">企業管理</a></li>
+              <li class="l-header-nav__item"><a href="recruit.html" class="l-header-nav__link">求人管理</a></li>
+              <li class="l-header-nav__item"><a href="selection.html" class="l-header-nav__link">応募選考管理</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header-nav__link">新規応募</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header__link">保留応募</a></li>
+              <li class="l-header-nav__item"><a href="setting.html" class="l-header-nav__link">設定</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header-nav__link">ユーザー管理</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header-nav__link">グループ管理</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header-nav__link">連携設定</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="p-appliRegister-main l-main">
+        <div class="p-appliRegister-main__inner c-register-bg">
+          <div class="p-appliRegister__title__inner c-title-inner">
+            <div class="p-appliRegister__group c-group">●●●●（グループ名）</div>
+            <div class="p-appliRegister__btn__inner">
+              <button class="p-appliRegister__input__btn c-input-btn">
+                <a href="person-info.html" class="p-appliRegister__input__btn__text c-input-btn-text">入力用フォームのリンクを取得</a>
+              </button>
+            </div>
+            <div class="p-appliRegister-border"></div>
+            <div class="p-appliRegister__create">
+              <div class="p-appliRegister__create__title">作成日</div>
+              <span class="p-appliRegister__create__data">2024/04/24</span>
+            </div>
+          </div>
+          <section class="p-appliRegister l-section">
+            <form action="">
+              <div class="p-appliRegister__inner l-inner">
+                <div class="p-appliRegister-applicant p-appliRegister-input-box">
+                  <label for="" class="p-appliRegister-applicant__label">求職者名</label>
+                  <input type="text" class="c-input">
+                </div>
+                <div class="p-appliRegister-name">
+                  <div class="p-appliRegister-name__first p-appliRegister-input-box">
+                    <label for="" class="p-appliRegister-applicant__label">姓</label>
+                    <input type="text" class="c-input">
+                  </div>
+                  <div class="p-appliRegister-name__last p-appliRegister-input-box">
+                    <label for="" class="p-appliRegister-applicant__label">名</label>
+                    <input type="text" class="c-input">
+                  </div>
+                  <div class="p-appliRegister-name__first__kana p-appliRegister-input-box">
+                    <label for="" class="p-appliRegister-applicant__label">セイ</label>
+                    <input type="text" class="c-input">
+                  </div>
+                  <div class="p-appliRegister-name__last__kana p-appliRegister-input-box">
+                    <label for="" class="p-appliRegister-applicant__label">メイ</label>
+                    <input type="text" class="c-input">
+                  </div>
+                </div>
+                <div class="p-appliRegister-gender p-appliRegister-input-box">
+                  <label for="">性別</label>
+                  <div class="p-appliRegister-gender__radio">
+                    <input type="radio" class="c-input-radio">
+                    <span>男性</span>
+                  </div>
+                  <div class="p-appliRegister-gender__radio u-marginleft-40">
+                    <input type="radio" class="c-input-radio">
+                    <span>女性</span>
+                  </div>
+                  <div class="p-appliRegister-gender__ca">
+                    <label for="">担当CA</label>
+                    <input type="text" class="c-input">
+                  </div>
+                </div>
+                <div class="p-appliRegister-birth p-appliRegister-input-box">
+                  <label for="">生年月日</label>
+                  <input type="text" class="c-input">
+                  <span class="u-birth-unit">年</span>
+                  <input type="text" class="c-input">
+                  <span class="u-birth-unit">月</span>
+                  <input type="text" class="c-input">
+                  <span class="u-birth-unit">日</span>
+                  <label for="" class="age-label">年齢</label>
+                  <span>数字</span>
+                </div>
+                <div class="p-appliRegister-numMail p-appliRegister-input-box">
+                  <div class="p-appliRegister__number">
+                    <label for="">電話番号</label>
+                    <input type="text" class="c-input">
+                  </div>
+                  <div class="p-appliRegister__email">
+                    <label for="">メールアドレス</label>
+                    <input type="text" class="c-input">
+                  </div>
+                </div>
+                <div class="p-appliRegister-school p-appliRegister-input-box">
+                  <label for="">学校名</label>
+                  <input type="text" class="c-input">
+                </div>
+                <div class="p-appliRegister-status-notEstab p-appliRegister-input-box">
+                  <div class="p-appliRegister-status">
+                    <label for="">ステータス</label>
+                    <input type="text" class="c-input">
+                  </div>
+                  <div class="p-appliRegister-notEstab">
+                    <label for="" class="u-marginleft-40">不成立理由</label>
+                    <input type="text" class="c-input">
+                  </div>
+                </div>
+                <div class="p-appliRegister-input-box">
+                  <div class="p-appliRegister-decision">
+                    <label for="">決定予想日</label>
+                    <input type="text" class="c-input">
+                  </div>
+                  <div class="p-appliRegister-interview">
+                    <label for="" class="u-marginleft-40">初回面談日</label>
+                    <input type="text" class="c-input">
+                  </div>
+                  <div class="p-appliRegister-interviewSet">
+                    <label for="" class="u-marginleft-40">面談設定日</label>
+                    <input type="text" class="c-input">
+                  </div>
+                </div>
+                <div class="p-appliRegister-selection p-appliRegister-input-box">
+                  <div class="p-appliRegister-apply">
+                    <label for="">応募数</label>
+                    <span class="p-appliRegister-apply__number p-appliRegister-selection__number">数字</span>
+                  </div>
+                  <div class="p-appliRegister-lastSelection">
+                    <label for="">最終選考数</label>
+                    <span class="p-appliRegister-lastSelection__number p-appliRegister-selection__number">数字</span>
+                  </div>
+                  <div class="p-appliRegister-select">
+                    <label for="">選考数</label>
+                    <span class="p-appliRegister-select__number p-appliRegister-selection__number">数字</span>
+                  </div>
+                  <div class="p-appliRegister-unofficial">
+                    <label for="">内定数</label>
+                    <span class="p-appliRegister-unofficial__number p-appliRegister-selection__number">数字</span>
+                  </div>
+                </div>
+                <div class="p-appliRegister-schCa p-appliRegister-input-box">
+                  <div class="p-appliRegister-school__info">
+                    <label for="" class="u-block">学生情報</label>
+                    <textarea name="" id="" class="u-display-block c-register-textarea"></textarea>
+                  </div>
+                  <div class="p-appliRegister-ca__comment">
+                    <label for="" class="u-block">CAコメント欄</label>
+                    <textarea name="" id="" class="u-display-block c-register-textarea"></textarea>
+                  </div>
+                </div>
+                <div class="p-appliRegister-newGraduate__container">
+                  <div class="p-appliRegister-newGraduate__title">--新卒入力欄--</div>
+                  <div class="p-appliRegister-newGraduate p-appliRegister-input-box">
+                    <div class="p-appliRegister-newGraduate__gradYear">
+                      <label for="">卒年度</label>
+                      <input type="text" class="c-input">
+                    </div>
+                    <div class="p-appliRegister-newGraduate__liteScience">
+                      <label for="">文理区分</label>
+                      <input type="radio" class="c-input-radio">
+                      <span class="p-appliRegister-newGraduate__liteScience__text">文系</span>
+                      <input type="radio" class="c-input-radio">
+                      <span class="p-appliRegister-newGraduate__liteScience__text">理系</span>
+                      <input type="radio" class="c-input-radio">
+                      <span class="p-appliRegister-newGraduate__liteScience__text">その他</span>
+                    </div>
+                    <div class="p-appliRegister-newGraduate__faculty">
+                      <label for="">学部名</label>
+                      <input type="text" class="c-input">
+                    </div>
+                    <div class="p-appliRegister-newGraduate__subject">
+                      <label for="">学科名</label>
+                      <input type="text" class="c-input">
+                    </div>
+                  </div>
+                </div>
+                <div class="p-appliRegister-halfway__container">
+                  <div class="p-appliRegister-halfway__title">--中途入力欄--</div>
+                  <div class="p-appliRegister-halfway">
+                    <div class="p-appliRegister-halfway__academic">
+                      <label for="">学歴</label>
+                      <input type="text" class="c-input">
+                    </div>
+                    <div class="p-appliRegister-halfway__job u-flex u-margintop-30">
+                      <div class="p-appliRegister-halfway__jobChange">
+                        <label for="">転職可能時期</label>
+                        <input type="text" class="c-input">
+                      </div>
+                      <div class="p-appliRegister-halfway__jobChange">
+                        <label for="" class="u-marginleft-40">経験社数</label>
+                        <input type="text" class="c-input">
+                      </div>
+                    </div>
+                    <div class="p-appliRegister-halfway__now u-flex u-margintop-30">
+                      <div class="p-appliRegister-halfway__now__job">
+                        <label for="">現在の職種</label>
+                        <input type="text" class="c-input">
+                      </div>
+                      <div class="p-appliRegister-halfway__now__income">
+                        <label for="" class="u-marginleft-40">現在の年収</label>
+                        <input type="text" class="c-input">
+                      </div>
+                    </div>
+                    <div class="p-appliRegister-halfway__desired u-flex u-margintop-30">
+                      <div class="p-appliRegister-halfway__desired__job">
+                        <label for="">希望職種</label>
+                        <input type="text" class="c-input">
+                      </div>
+                      <div class="p-appliRegister-halfway__desired__income">
+                        <label for="" class="u-marginleft-40">希望年収</label>
+                        <input type="text" class="c-input">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="p-appliRegister-btn c-register-btn">
+                <div class="p-appliRegister-btn-text c-register-btn-text">保存する</div>
+              </button>
+            </form>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
