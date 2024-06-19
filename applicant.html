@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -30,7 +31,7 @@
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
           crossorigin="anonymous">
   </script>
-<script defer src="assets/js/main.js"></script><link href="assets/css/styles.css" rel="stylesheet"></head>
+<script defer src="assets/js/main.js"></script><link href="assets/css/styles.css" rel="stylesheet"><script defer src="assets/js/main.js"></script><link href="assets/css/styles.css" rel="stylesheet"></head>
 <body>
   <div class="l-wrapper">
     <div class="l-wrapper__flex">
@@ -68,44 +69,130 @@
               <button class="p-appli__input__btn c-input-btn">
                 <a href="person-info.html" class="p-appli__input__btn__text c-input-btn-text">入力用フォームのリンクを取得</a>
               </button>
-              <div class="p-appli__filter c-filter">
-                <img src="assets/images/filter.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="p-appli__pagination c-pagination">
-            <div class="p-appli__pagination__inner c-pagination__inner">
-              <div class="c-pagination__prev__arrow">
-                <i class="fa-solid fa-arrow-left"></i>
-              </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__radius__text">1</span>
-              </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__radius__text">2</span>
-              </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__radius__text">3</span>
-              </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__radius__text">4</span>
-              </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__radius__text">5</span>
-              </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__text">...</span>
-              </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__radius__text">30</span>
-              </div>
-              <div class="c-pagination__next__arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-              </div>
             </div>
           </div>
           <section class="p-appli l-section">
             <div class="p-appli__inner l-inner">
+              <div class="p-appli__filter c-filter">
+                <img src="assets/images/filter.png" alt="">
+              </div>
+              </div>
+              <div class="p-appli-filter-popup">
+                <div class="p-appli-filter-popup__inner">
+                  <div class="p-appli-filter-popup__calendar p-appli-filter-popup__content">
+                    <label for="">作成日</label>
+                    <div class="p-appli-filter-popup__calendar__input p-appli-filter-popup__content__input">
+                      <input type="date" value="年/月/日">
+                      <span class="u-marginrl-15">〜</span>
+                      <input type="date" value="年/月/日">
+                    </div>
+                  </div>
+                  <div class="p-appli-filter-popup__type p-appli-filter-popup__content">
+                    <label for="">種別</label>
+                    <div class="p-appli-filter-popup__type__input p-appli-filter-popup__content__input">
+                      <input type="checkbox">
+                      <span>インターン</span>
+                      <input type="checkbox">
+                      <span>新卒</span>
+                      <input type="checkbox">
+                      <span>中途</span>
+                    </div>
+                  </div>
+                  <div class="p-appli-filter-popup__select__grid">
+                    <div class="p-appli-filter-popup__ca p-appli-filter-popup__content">
+                      <label for="">担当CA</label>
+                      <div class="p-appli-filter-popup__ca__input p-appli-filter-popup__content__input">
+                        <select name="" id="">
+                          <option value="">岩手県</option>
+                          <option value="">宮城県</option>
+                          <option value="">秋田県</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="p-appli-filter-popup__profit p-appli-filter-popup__content">
+                      <label for="" class="u-marginleft-40">ヨミ確度</label>
+                      <div class="p-appli-filter-popup__profit__input p-appli-filter-popup__content__input">
+                        <select name="" id="">
+                          <option value="">岩手県</option>
+                          <option value="">宮城県</option>
+                          <option value="">秋田県</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="p-appli-filter-popup__profit p-appli-filter-popup__content">
+                      <label for="">求人名</label>
+                      <div class="p-appli-filter-popup__profit__input p-appli-filter-popup__content__input">
+                        <select name="" id="">
+                          <option value="">岩手県</option>
+                          <option value="">宮城県</option>
+                          <option value="">秋田県</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="p-appli-filter-popup__applicant p-appli-filter-popup__content">
+                      <label for="" class="u-marginleft-40">求職者名</label>
+                      <div class="p-appli-filter-popup__applicant__input p-appli-filter-popup__content__input">
+                        <select name="" id="">
+                          <option value="">岩手県</option>
+                          <option value="">宮城県</option>
+                          <option value="">秋田県</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="p-appli-filter-popup__company p-appli-filter-popup__content">
+                      <label for="">企業名</label>
+                      <div class="p-appli-filter-popup__company__input p-appli-filter-popup__content__input">
+                        <select name="" id="">
+                          <option value="">岩手県</option>
+                          <option value="">宮城県</option>
+                          <option value="">秋田県</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="p-appli-filter-popup__phase p-appli-filter-popup__content">
+                      <label for="" class="u-marginleft-40">フェーズ</label>
+                      <div class="p-appli-filter-popup__phase__input p-appli-filter-popup__content__input">
+                        <select name="" id="">
+                          <option value="">岩手県</option>
+                          <option value="">宮城県</option>
+                          <option value="">秋田県</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-appli__pagination c-pagination">
+                <div class="p-appli__pagination__inner c-pagination__inner">
+                  <div class="c-pagination__prev__arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__radius__text">1</span>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__radius__text">2</span>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__radius__text">3</span>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__radius__text">4</span>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__radius__text">5</span>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__text">...</span>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__radius__text">30</span>
+                  </div>
+                  <div class="c-pagination__next__arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
               <table class="p-appli__table c-table">
                 <tr class="p-appli__tr c-tr">
                   <th class="p-appli__th c-th"><input type="checkbox" class="c-input-checkbox"></th>

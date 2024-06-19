@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -30,7 +31,7 @@
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
           crossorigin="anonymous">
   </script>
-<script defer src="assets/js/main.js"></script><link href="assets/css/styles.css" rel="stylesheet"></head>
+<script defer src="assets/js/main.js"></script><link href="assets/css/styles.css" rel="stylesheet"><script defer src="assets/js/main.js"></script><link href="assets/css/styles.css" rel="stylesheet"></head>
 <body>
   <div class="l-wrapper">
     <div class="l-wrapper__flex">
@@ -54,130 +55,227 @@
           </nav>
         </div>
       </header>
-      <main class="p-appli-main l-main">
-        <div class="p-appli__inner l-main-inner">
-          <div class="p-appli__title__inner c-title-inner">
-            <div class="p-appli__group c-group">●●●●（グループ名）</div>
-            <div class="p-appli__title c-title-area">
+      <main class="p-corporate-main l-main">
+        <div class="p-corporate__inner l-main-inner">
+          <div class="p-corporate__title__inner c-title-inner">
+            <div class="p-corporate__group c-group">●●●●（グループ名）</div>
+            <div class="p-corporate__title c-title-area">
               <h1 class="c-title">企業一覧</h1>
             </div>
-            <div class="p-appli-btn__inner">
-              <button class="p-appli__register__btn c-btn">
-                <a href="applicant-register.html" class="p-appli__register__btn__text c-btn-text">求職者登録</a>
+            <div class="p-corporate-btn__inner">
+              <button class="p-corporate__register__btn c-btn">
+                <a href="applicant-register.html" class="p-corporate__register__btn__text c-btn-text">+企業登録</a>
               </button>
-              <button class="p-appli__input__btn c-input-btn">
-                <a href="person-info.html" class="p-appli__input__btn__text c-input-btn-text">入力用フォームのリンクを取得</a>
-              </button>
-              <div class="p-appli__filter c-filter">
+            </div>
+          </div>
+          <section class="p-corporate l-section">
+            <div class="p-corporate__inner l-inner">
+              <div class="p-corporate__filter c-filter">
                 <img src="assets/images/filter.png" alt="">
               </div>
-            </div>
-          </div>
-          <div class="p-appli__pagination c-pagination">
-            <div class="p-appli__pagination__inner c-pagination__inner">
-              <div class="c-pagination__prev__arrow">
-                <i class="fa-solid fa-arrow-left"></i>
               </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__radius__text">1</span>
+              <div class="p-corporate-filter-popup">
+                <div class="p-corporate-filter-popup__inner">
+                  <div class="p-corporate-filter-popup__calendar p-corporate-filter-popup__content">
+                    <label for="">作成日</label>
+                    <div class="p-corporate-filter-popup__calendar__input p-corporate-filter-popup__content__input">
+                      <input type="date" value="年/月/日">
+                      <span class="u-marginrl-15">〜</span>
+                      <input type="date" value="年/月/日">
+                    </div>
+                  </div>
+                  <div class="p-corporate-filter-popup__type p-corporate-filter-popup__content">
+                    <label for="">種別</label>
+                    <div class="p-corporate-filter-popup__type__input p-corporate-filter-popup__content__input">
+                      <input type="checkbox">
+                      <span>インターン</span>
+                      <input type="checkbox">
+                      <span>新卒</span>
+                      <input type="checkbox">
+                      <span>中途</span>
+                    </div>
+                  </div>
+                  <div class="p-corporate-filter-popup__select__grid">
+                    <div class="p-corporate-filter-popup__ca p-corporate-filter-popup__content">
+                      <label for="">担当CA</label>
+                      <div class="p-corporate-filter-popup__ca__input p-corporate-filter-popup__content__input">
+                        <select name="" id="">
+                          <option value="">岩手県</option>
+                          <option value="">宮城県</option>
+                          <option value="">秋田県</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="p-corporate-filter-popup__profit p-corporate-filter-popup__content">
+                      <label for="" class="u-marginleft-40">ヨミ確度</label>
+                      <div class="p-corporate-filter-popup__profit__input p-corporate-filter-popup__content__input">
+                        <select name="" id="">
+                          <option value="">岩手県</option>
+                          <option value="">宮城県</option>
+                          <option value="">秋田県</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="p-corporate-filter-popup__profit p-corporate-filter-popup__content">
+                      <label for="">求人名</label>
+                      <div class="p-corporate-filter-popup__profit__input p-corporate-filter-popup__content__input">
+                        <select name="" id="">
+                          <option value="">岩手県</option>
+                          <option value="">宮城県</option>
+                          <option value="">秋田県</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="p-corporate-filter-popup__applicant p-corporate-filter-popup__content">
+                      <label for="" class="u-marginleft-40">求職者名</label>
+                      <div class="p-corporate-filter-popup__applicant__input p-corporate-filter-popup__content__input">
+                        <select name="" id="">
+                          <option value="">岩手県</option>
+                          <option value="">宮城県</option>
+                          <option value="">秋田県</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="p-corporate-filter-popup__company p-corporate-filter-popup__content">
+                      <label for="">企業名</label>
+                      <div class="p-corporate-filter-popup__company__input p-corporate-filter-popup__content__input">
+                        <select name="" id="">
+                          <option value="">岩手県</option>
+                          <option value="">宮城県</option>
+                          <option value="">秋田県</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="p-corporate-filter-popup__phase p-corporate-filter-popup__content">
+                      <label for="" class="u-marginleft-40">フェーズ</label>
+                      <div class="p-corporate-filter-popup__phase__input p-corporate-filter-popup__content__input">
+                        <select name="" id="">
+                          <option value="">岩手県</option>
+                          <option value="">宮城県</option>
+                          <option value="">秋田県</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__radius__text">2</span>
+              <div class="p-corporate__flex">
+                <div class="p-corporate__search">
+                  <i class="fa-solid fa-magnifying-glass p-corporate__search__i"></i>
+                  <input type="search" value="">
+                </div>
+                <div class="p-corporate__pagination c-pagination">
+                  <div class="p-corporate__pagination__inner c-pagination__inner">
+                    <div class="c-pagination__prev__arrow">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="c-pagination__radius">
+                      <span class="c-pagination__radius__text">1</span>
+                    </div>
+                    <div class="c-pagination__radius">
+                      <span class="c-pagination__radius__text">2</span>
+                    </div>
+                    <div class="c-pagination__radius">
+                      <span class="c-pagination__radius__text">3</span>
+                    </div>
+                    <div class="c-pagination__radius">
+                      <span class="c-pagination__radius__text">4</span>
+                    </div>
+                    <div class="c-pagination__radius">
+                      <span class="c-pagination__radius__text">5</span>
+                    </div>
+                    <div class="c-pagination__radius">
+                      <span class="c-pagination__text">...</span>
+                    </div>
+                    <div class="c-pagination__radius">
+                      <span class="c-pagination__radius__text">30</span>
+                    </div>
+                    <div class="c-pagination__next__arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__radius__text">3</span>
-              </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__radius__text">4</span>
-              </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__radius__text">5</span>
-              </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__text">...</span>
-              </div>
-              <div class="c-pagination__radius">
-                <span class="c-pagination__radius__text">30</span>
-              </div>
-              <div class="c-pagination__next__arrow">
-                <i class="fa-solid fa-arrow-right"></i>
-              </div>
-            </div>
-          </div>
-          <section class="p-appli l-section">
-            <div class="p-appli__inner l-inner">
-              <table class="p-appli__table c-table">
-                <tr class="p-appli__tr c-tr">
-                  <th class="p-appli__th c-th"><input type="checkbox" class="c-input-checkbox"></th>
-                  <th class="p-appli__th c-th">求職者名</th>
-                  <th class="p-appli__th c-th">担当CA</th>
-                  <th class="p-appli__th c-th">ステータス</th>
-                  <th class="p-appli__th c-th">選考数</th>
-                  <th class="p-appli__th c-th">内定数</th>
-                  <th class="p-appli__th c-th">CAコメント欄</th>
+              <table class="p-corporate__table c-table">
+                <tr class="p-corporate__tr c-tr">
+                  <th class="p-corporate__th c-th">企業HP</th>
+                  <th class="p-corporate__th c-th">企業名</th>
+                  <th class="p-corporate__th c-th">担当RA</th>
+                  <th class="p-corporate__th c-th">本社所在地</th>
+                  <th class="p-corporate__th c-th">業界</th>
+                  <th class="p-corporate__th c-th">企業フェーズ</th>
+                  <th class="p-corporate__th c-th">上場</th>
+                  <th class="p-corporate__th c-th">採用計画</th>
                 </tr>
-                <tr class="p-appli__tr c-tr">
-                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox" checked="checked"></td>
-                  <td class="p-appli-td c-td"><a href="">松井良太</a></td>
-                  <td class="p-appli-td c-td">後東健太</td>
-                  <td class="p-appli-td c-td">支援中</td>
-                  <td class="p-appli-td c-td"><a href="">1</a></td>
-                  <td class="p-appli-td c-td"><a href="">10</a></td>
-                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea">フリーテキスト&NewLine;(ここで入力可)</textarea></td>
+                <tr class="p-corporate__tr c-tr">
+                  <td class="p-corporate-td c-td"><span class="p-corporate-td-heading">企業HP</span></td>
+                  <td class="p-corporate-td c-td"><a href="">株式会社●●</a></td>
+                  <td class="p-corporate-td c-td">松井</td>
+                  <td class="p-corporate-td c-td">東京都</td>
+                  <td class="p-corporate-td c-td">人材</td>
+                  <td class="p-corporate-td c-td">メガベンチャー</td>
+                  <td class="p-corporate-td c-td">プライム</td>
+                  <td class="p-corporate-td c-td">20名</td>
                 </tr>
-                <tr class="p-appli__tr c-tr">
-                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox" checked="checked"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea"></textarea></td>
+                <tr class="p-corporate__tr c-tr">
+                  <td class="p-corporate-td c-td"><span class="p-corporate-td-heading">企業HP</span></td>
+                  <td class="p-corporate-td c-td"><a href=""></a></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
                 </tr>
-                <tr class="p-appli__tr c-tr">
-                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox" checked="checked"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea"></textarea></td>
+                <tr class="p-corporate__tr c-tr">
+                  <td class="p-corporate-td c-td"><span class="p-corporate-td-heading">企業HP</span></td>
+                  <td class="p-corporate-td c-td"><a href=""></a></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
                 </tr>
-                <tr class="p-appli__tr c-tr">
-                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea"></textarea></td>
+                <tr class="p-corporate__tr c-tr">
+                  <td class="p-corporate-td c-td"><span class="p-corporate-td-heading">企業HP</span></td>
+                  <td class="p-corporate-td c-td"><a href=""></a></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
                 </tr>
-                <tr class="p-appli__tr c-tr">
-                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea"></textarea></td>
+                <tr class="p-corporate__tr c-tr">
+                  <td class="p-corporate-td c-td"><span class="p-corporate-td-heading">企業HP</span></td>
+                  <td class="p-corporate-td c-td"><a href=""></a></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
                 </tr>
-                <tr class="p-appli__tr c-tr">
-                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea"></textarea></td>
+                <tr class="p-corporate__tr c-tr">
+                  <td class="p-corporate-td c-td"><span class="p-corporate-td-heading">企業HP</span></td>
+                  <td class="p-corporate-td c-td"><a href=""></a></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
                 </tr>
-                <tr class="p-appli__tr c-tr">
-                  <td class="p-appli-td c-td"><input type="checkbox" class="c-input-checkbox"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"></td>
-                  <td class="p-appli-td c-td"><textarea name="" class="c-textarea"></textarea></td>
+                <tr class="p-corporate__tr c-tr">
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"><a href=""></a></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
+                  <td class="p-corporate-td c-td"></td>
                 </tr>
               </table>
             </div>
