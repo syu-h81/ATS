@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <!-- OGP -->
+  <meta property="og:url" content=""> <!-- //ページのURLを設定 -->
+  <meta property="og:type" content=""> <!-- //ページの種類を設定 -->
+  <meta property="og:title" content=""> <!-- //ページのタイトルを設定 -->
+  <meta property="og:description" content=""> <!-- //ページのディスカッションを設定 -->
+  <meta property="og:site_name" content=""> <!-- //サイトの名前を設定 -->
+  <meta property="og:image" content=""> <!-- //ogp画像の設定 -->
+  <meta property="og:locale" content="ja_JP"> <!-- //ページの国コードの設定 -->
+
+  <!-- Import Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Import fontawesome -->
+  <link href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" rel="stylesheet">
+
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Import JS/jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous">
+  </script>
+<script defer src="assets/js/main.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
+<body>
+  <div class="l-wrapper">
+    <div class="l-wrapper__flex">
+      <!--======== l-header ========-->
+      <header class="l-header">
+        <div class="l-header__inner l-inner">
+          <nav class="l-header-nav">
+            <ul class="l-header-nav__list">
+              <li class="l-header-nav__item"><a href="index.html" class="l-header__link">ホーム</a></li>
+              <li class="l-header-nav__item"><a href="applicant.html" class="l-header-nav__link">求職者管理</a></li>
+              <li class="l-header-nav__item"><a href="corporate.html" class="l-header-nav__link">企業管理</a></li>
+              <li class="l-header-nav__item"><a href="recruit.html" class="l-header-nav__link">求人管理</a></li>
+              <li class="l-header-nav__item"><a href="selection.html" class="l-header-nav__link">応募選考管理</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header-nav__link">新規応募</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header__link">保留応募</a></li>
+              <li class="l-header-nav__item"><a href="setting.html" class="l-header-nav__link">設定</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header-nav__link">ユーザー管理</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header-nav__link">グループ管理</a></li>
+              <li class="l-header-nav__item l-header-nav__subItem"><a href="" class="l-header-nav__link">連携設定</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="p-holdApplicant-main l-main">
+        <div class="p-holdApplicant__inner l-main-inner">
+          <div class="p-holdApplicant__title__inner c-title-inner">
+            <div class="p-holdApplicant__group c-group">●●●●（グループ名）</div>
+            <div class="p-holdApplicant__title c-title-area">
+              <h1 class="c-title">保留求職者一覧</h1>
+              <p class="p-holdApplicant__text">入力フォームから回答した求職者一覧になります。</p>
+            </div>
+          </div>
+          <section class="p-holdApplicant l-section">
+            <div class="p-holdApplicant__inner l-inner">
+              <div class="p-holdApplicant__filter c-filter">
+                <img src="assets/images/filter.png" alt="">
+              </div>
+              <div class="p-holdApplicant__pagination c-pagination">
+                <div class="p-holdApplicant__pagination__inner c-pagination__inner">
+                  <div class="c-pagination__prev__arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__radius__text">1</span>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__radius__text">2</span>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__radius__text">3</span>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__radius__text">4</span>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__radius__text">5</span>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__text">...</span>
+                  </div>
+                  <div class="c-pagination__radius">
+                    <span class="c-pagination__radius__text">30</span>
+                  </div>
+                  <div class="c-pagination__next__arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+              <table class="p-holdApplicant__table c-table">
+                <tr class="p-holdApplicant__tr c-tr">
+                  <th class="p-holdApplicant__th c-th"></th>
+                  <th class="p-holdApplicant__th c-th u-width-300 u-height-50">求職者名</th>
+                  <th class="p-holdApplicant__th c-th">学校名</th>
+                  <th class="p-holdApplicant__th c-th u-width-300">フォーム送信日時</th>
+                </tr>
+                <tr class="p-holdApplicant__tr c-tr">
+                  <td class="p-holdApplicant-td c-td u-paddingtb-30"><span href="" class="p-holdApplicant__edit">編集</span></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-30"><a href="">松井良太</a></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-30">近畿大学</td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-30">2024/03/28 9:00</td>
+                </tr>
+                <tr class="p-holdApplicant__tr c-tr">
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"><span href="" class="p-holdApplicant__edit">編集</span></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"></td>
+                </tr>
+                <tr class="p-holdApplicant__tr c-tr">
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"><span href="" class="p-holdApplicant__edit">編集</span></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"></td>
+                </tr>
+                <tr class="p-holdApplicant__tr c-tr">
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"><span href="" class="p-holdApplicant__edit">編集</span></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"></td>
+                </tr>
+                <tr class="p-holdApplicant__tr c-tr">
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"><span href="" class="p-holdApplicant__edit">編集</span></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"></td>
+                  <td class="p-holdApplicant-td c-td u-paddingtb-20"></td>
+                </tr>
+                <tr class="p-holdApplicant__tr c-tr">
+                  <td class="p-holdApplicant-td c-td u-height-300"><span href=""></span></td>
+                  <td class="p-holdApplicant-td c-td u-height-300"></td>
+                  <td class="p-holdApplicant-td c-td u-height-300"></td>
+                  <td class="p-holdApplicant-td c-td u-height-300"></td>
+                </tr>
+              </table>
+            </div>
+            <div class="p-holdApplicant__btn__inner">
+              <div class="p-holdApplicant__btn__area">
+                <button class="p-holdApplicant__btn__register">
+                  <div class="p-holdApplicant__btn__register__text">登録</div>
+                </button>
+                <button class="p-holdApplicant__btn__delete">
+                  <div class="p-holdApplicant__btn__delete__text">削除</div>
+                </button>
+              </div>
+              <div class="p-holdApplicant__btn__area">
+                <button class="p-holdApplicant__btn__register">
+                  <div class="p-holdApplicant__btn__register__text">登録</div>
+                </button>
+                <button class="p-holdApplicant__btn__delete">
+                  <div class="p-holdApplicant__btn__delete__text">削除</div>
+                </button>
+              </div>
+              <div class="p-holdApplicant__btn__area">
+                <button class="p-holdApplicant__btn__register">
+                  <div class="p-holdApplicant__btn__register__text">登録</div>
+                </button>
+                <button class="p-holdApplicant__btn__delete">
+                  <div class="p-holdApplicant__btn__delete__text">削除</div>
+                </button>
+              </div>
+              <div class="p-holdApplicant__btn__area">
+                <button class="p-holdApplicant__btn__register">
+                  <div class="p-holdApplicant__btn__register__text">登録</div>
+                </button>
+                <button class="p-holdApplicant__btn__delete">
+                  <div class="p-holdApplicant__btn__delete__text">削除</div>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

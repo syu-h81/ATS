@@ -1,2 +1,2 @@
 /*! For license information please see main.js.LICENSE.txt */
-(()=>{"use strict";var __webpack_modules__={"./src/assets/js/main.js":()=>{eval("\n\n//# sourceURL=webpack:///./src/assets/js/main.js?")}},__webpack_exports__={};__webpack_modules__["./src/assets/js/main.js"]()})();
+(()=>{var __webpack_modules__={"./src/assets/js/main.js":()=>{eval("$(function () {\n  $('.p-personInfo-btn').on('click', function () {\n    $('.p-personInfo-popup').toggle('.open');\n  });\n  $('.cancel').on('click', function () {\n    $('.p-personInfo-popup').toggle('.open');\n  });\n});\n\n//# sourceURL=webpack:///./src/assets/js/main.js?")}},__webpack_exports__={};__webpack_modules__["./src/assets/js/main.js"]()})();
