@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <!-- OGP -->
+  <meta property="og:url" content=""> <!-- //ページのURLを設定 -->
+  <meta property="og:type" content=""> <!-- //ページの種類を設定 -->
+  <meta property="og:title" content=""> <!-- //ページのタイトルを設定 -->
+  <meta property="og:description" content=""> <!-- //ページのディスカッションを設定 -->
+  <meta property="og:site_name" content=""> <!-- //サイトの名前を設定 -->
+  <meta property="og:image" content=""> <!-- //ogp画像の設定 -->
+  <meta property="og:locale" content="ja_JP"> <!-- //ページの国コードの設定 -->
+
+  <!-- Import Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Import fontawesome -->
+  <link href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" rel="stylesheet">
+
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Import JS/jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous">
+  </script>
+<script defer src="assets/js/main.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
+<body>
+  <div class="p-personInfo-wrapper l-wrapper">
+    <main class="p-personInfo-main l-main">
+      <div class="p-personInfo-main__inner c-register-bg">
+        <div class="p-personInfo__title__inner c-title-inner">
+          <div class="p-personInfo__title c-title-area">
+            <h1 class="c-title">個人情報入力フォーム</h1>
+          </div>
+          <div class="p-personInfo-border"></div>
+        </div>
+        <section class="p-personInfo l-section">
+          <form action="">
+            <div class="p-personInfo__inner l-inner">
+              <div class="p-personInfo-name">
+                <div class="p-personInfo-name__first p-personInfo-input-box">
+                  <label for="" class="p-personInfo-applicant__label">姓</label>
+                  <input type="text" class="c-input">
+                </div>
+                <div class="p-personInfo-name__last p-personInfo-input-box">
+                  <label for="" class="p-personInfo-applicant__label">名</label>
+                  <input type="text" class="c-input">
+                </div>
+                <div class="p-personInfo-name__first__kana p-personInfo-input-box">
+                  <label for="" class="p-personInfo-applicant__label">セイ</label>
+                  <input type="text" class="c-input">
+                </div>
+                <div class="p-personInfo-name__last__kana p-personInfo-input-box">
+                  <label for="" class="p-personInfo-applicant__label">メイ</label>
+                  <input type="text" class="c-input">
+                </div>
+              </div>
+              <div class="p-personInfo-gender p-personInfo-input-box">
+                <label for="">性別</label>
+                <div class="p-personInfo-gender__radio">
+                  <input type="radio" class="c-input-radio">
+                  <span>男性</span>
+                </div>
+                <div class="p-personInfo-gender__radio u-marginleft-40">
+                  <input type="radio" class="c-input-radio">
+                  <span>女性</span>
+                </div>
+                <div class="p-personInfo-gender__ca">
+                  <label for="">担当CA</label>
+                  <input type="text" class="c-input">
+                </div>
+              </div>
+              <div class="p-personInfo-birth p-personInfo-input-box">
+                <label for="">生年月日</label>
+                <input type="text" class="c-input">
+                <span class="u-birth-unit">年</span>
+                <input type="text" class="c-input">
+                <span class="u-birth-unit">月</span>
+                <input type="text" class="c-input">
+                <span class="u-birth-unit">日</span>
+                <label for="" class="age-label">年齢</label>
+                <span>数字</span>
+              </div>
+              <div class="p-personInfo-numMail p-personInfo-input-box">
+                <div class="p-personInfo__number">
+                  <label for="">電話番号</label>
+                  <input type="text" class="c-input">
+                </div>
+                <div class="p-personInfo__email">
+                  <label for="">メールアドレス</label>
+                  <input type="text" class="c-input">
+                </div>
+              </div>
+              <div class="p-personInfo-newGraduate__container">
+                <div class="p-personInfo-newGraduate__title">--新卒入力欄--</div>
+                <div class="p-personInfo-newGraduate p-personInfo-input-box">
+                  <div class="p-personInfo-newGraduate__gradYear">
+                    <label for="">卒年度</label>
+                    <input type="text" class="c-input">
+                  </div>
+                  <div class="p-personInfo-newGraduate__liteScience">
+                    <label for="">文理区分</label>
+                    <input type="radio" class="c-input-radio">
+                    <span class="p-personInfo-newGraduate__liteScience__text">文系</span>
+                    <input type="radio" class="c-input-radio">
+                    <span class="p-personInfo-newGraduate__liteScience__text">理系</span>
+                    <input type="radio" class="c-input-radio">
+                    <span class="p-personInfo-newGraduate__liteScience__text">その他</span>
+                  </div>
+                  <div class="p-personInfo-newGraduate__faculty">
+                    <label for="">学部名</label>
+                    <input type="text" class="c-input">
+                  </div>
+                  <div class="p-personInfo-newGraduate__subject">
+                    <label for="">学科名</label>
+                    <input type="text" class="c-input">
+                  </div>
+                </div>
+              </div>
+              <div class="p-personInfo-halfway__container">
+                <div class="p-personInfo-halfway__title">--中途入力欄--</div>
+                <div class="p-personInfo-halfway">
+                  <div class="p-personInfo-halfway__academic">
+                    <label for="">学歴</label>
+                    <input type="text" class="c-input">
+                  </div>
+                  <div class="p-personInfo-halfway__job u-flex u-margintop-30">
+                    <div class="p-personInfo-halfway__jobChange">
+                      <label for="">転職可能時期</label>
+                      <input type="text" class="c-input">
+                    </div>
+                    <div class="p-personInfo-halfway__jobChange">
+                      <label for="" class="u-marginleft-40">経験社数</label>
+                      <input type="text" class="c-input">
+                    </div>
+                  </div>
+                  <div class="p-personInfo-halfway__now u-flex u-margintop-30">
+                    <div class="p-personInfo-halfway__now__job">
+                      <label for="">現在の職種</label>
+                      <input type="text" class="c-input">
+                    </div>
+                    <div class="p-personInfo-halfway__now__income">
+                      <label for="" class="u-marginleft-40">現在の年収</label>
+                      <input type="text" class="c-input">
+                    </div>
+                  </div>
+                  <div class="p-personInfo-halfway__desired u-flex u-margintop-30">
+                    <div class="p-personInfo-halfway__desired__job">
+                      <label for="">希望職種</label>
+                      <input type="text" class="c-input">
+                    </div>
+                    <div class="p-personInfo-halfway__desired__income">
+                      <label for="" class="u-marginleft-40">希望年収</label>
+                      <input type="text" class="c-input">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <button class="p-personInfo-btn c-register-btn">
+            <div class="p-personInfo-btn-text c-register-btn-text">保存する</div>
+          </button>
+        </section>
+      </div>
+    </main>
+    <div class="p-personInfo-popup">
+      <div class="p-personInfo-popup__inner">
+        <div class="p-personInfo-popup__title">
+          <div class="c-title">送信しますか？</div>
+        </div>
+        <div class="p-personInfo-popup__btn__area">
+          <div class="cancel">
+            <button class="p-personInfo-popup__btn__edit p-personInfo-popup__btn">
+              <div class="p-personInfo-popup__btn__edit__text">編集する</div>
+            </button>
+          </div>
+          <a href="hold-applicant.html">
+            <button class="p-personInfo-popup__btn__send p-personInfo-popup__btn">
+              <div class="p-personInfo-popup__btn__send__text">送信する</div>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
